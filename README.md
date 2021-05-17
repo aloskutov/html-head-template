@@ -79,6 +79,44 @@ The example below uses a mix of Twitter and Open Graph tags to define a summary 
 <meta property="og:image" content="http://example.com/rock2.jpg" />
 ```
 
-[manifest.json](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+# [apple-touch-icon](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-[browserconfig.xml](https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx)
+- `apple-touch-icon-precomposed` - иконки с заранее наложенными эффектами в стиле iOS.
+- `apple-touch-icon` - иконки без эффектов, мобильное устройство само наложит на эту иконку свои эффекты.
+    - Rounded corners
+    - Drop shadow
+    - Reflective shine
+
+```html
+<!-- For Chrome for Android: -->
+<link rel="icon" sizes="192x192" href="touch-icon-192x192.png">
+<!-- For iPhone 6 Plus with @3× display: -->
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+<!-- For iPad with @2× display running iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+<!-- For iPad with @2× display running iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+<!-- For iPhone with @2× display running iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+<!-- For iPhone with @2× display running iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76-precomposed.png">
+<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"><!-- 57×57px -->
+```
+
+- `apple-touch-icon-57x57-precomposed.png` or `apple-touch-icon-57x57.png` for non-Retina iPhone and iPod Touch (@1× display);
+- `apple-touch-icon-76x76-precomposed.png` or `apple-touch-icon-76x76.png` for the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7;
+- `apple-touch-icon-120x120-precomposed.png` or `apple-touch-icon-120x120.png` for iPhone 4+ (with @2× display) on iOS ≥ 7;
+- `apple-touch-icon-152x152-precomposed.png` or `apple-touch-icon-152x152.png` for iPad 3+ (with @2× display);
+- `apple-touch-icon-180x180-precomposed.png` or `apple-touch-icon-180x180.png` for iPhone 6 Plus (with @3× display);
+- `touch-icon-192x192.png` for Chrome for Android;
+- `apple-touch-icon-precomposed.png` and `apple-touch-icon.png` as a fallback for everything else (possibly including non-Apple devices).
+
+[Everything you always wanted to know about touch icons · Mathias Bynens](https://mathiasbynens.be/notes/touch-icons)
+# [manifest.json](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+
+# [browserconfig.xml](https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx)
