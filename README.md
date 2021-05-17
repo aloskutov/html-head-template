@@ -43,9 +43,7 @@ The example below uses a mix of Twitter and Open Graph tags to define a summary 
 
 ```html
 <meta property="og:audio" content="http://example.com/bond/theme.mp3" />
-<meta property="og:description"
-  content="Sean Connery found fame and fortune as the
-           suave, sophisticated British agent, James Bond." />
+<meta property="og:description" content="Sean Connery found fame and fortune as the suave, sophisticated British agent, James Bond." />
 <meta property="og:determiner" content="the" />
 <meta property="og:locale" content="en_GB" />
 <meta property="og:locale:alternate" content="fr_FR" />
