@@ -1,4 +1,13 @@
-# [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
+# HTML head template
+Шаблон html-страницы с расширенным набором мета-тэгов в секции ``<head>``
+- Twitter card
+- Open graph
+- Apple icon set
+- manifest.json
+- browserconfig.xml
+
+---
+## [Twitter Card](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 Twitter card tags look similar to Open Graph tags, and are based on the same conventions as the Open Graph protocol. When using Open Graph protocol to describe data on a page, it is easy to generate a Twitter card without duplicating tags and data. When the Twitter card processor looks for tags on a page, it first checks for the Twitter-specific property, and if not present, falls back to the supported Open Graph property. This allows for both to be defined on the page independently, and minimizes the amount of duplicate markup required to describe content and experience.
 
@@ -17,8 +26,8 @@ The example below uses a mix of Twitter and Open Graph tags to define a summary 
 ```
 
 
-# [Open Graph](https://ruogp.me/) og:tag
-## Основные теги
+## [Open Graph](https://ruogp.me/)
+### Основные теги
 - `og:title` - Название вашего объекта, как он должен отображаться
 - `og:type` - [Тип объектa](https://ruogp.me/#types)
 - `og:image` - URL-адрес изображения, который должен определить Ваш объект в графе для изображения
@@ -32,7 +41,7 @@ The example below uses a mix of Twitter and Open Graph tags to define a summary 
 <meta property="og:url" content= "https://ru.wikipedia.org/wiki/Мэрилин_Монро" />
 ```
 
-## Дополнительные теги
+### Дополнительные теги
 - `og:audio` — URL звукового файла, который относится к описываемому объекту.
 - `og:description` - Одно-два предложения описания вашего объекта.
 - `og:locale` - Тег локации. Формат language_TERRITORY. По умолчанию en_US.
@@ -79,7 +88,7 @@ The example below uses a mix of Twitter and Open Graph tags to define a summary 
 <meta property="og:image" content="http://example.com/rock2.jpg" />
 ```
 
-# [apple-touch-icon](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+## [apple-touch-icon](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
 - `apple-touch-icon-precomposed` - иконки с заранее наложенными эффектами в стиле iOS.
 - `apple-touch-icon` - иконки без эффектов, мобильное устройство само наложит на эту иконку свои эффекты.
@@ -117,6 +126,8 @@ The example below uses a mix of Twitter and Open Graph tags to define a summary 
 - `apple-touch-icon-precomposed.png` and `apple-touch-icon.png` as a fallback for everything else (possibly including non-Apple devices).
 
 [Everything you always wanted to know about touch icons · Mathias Bynens](https://mathiasbynens.be/notes/touch-icons)
-# [manifest.json](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 
-# [browserconfig.xml](https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx)
+---
+## [manifest.json](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+
+## [browserconfig.xml](https://msdn.microsoft.com/en-us/library/ie/dn455106.aspx)
